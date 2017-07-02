@@ -1,0 +1,17 @@
+.link {
+  cursor: pointer;
+  &--black {
+    border-bottom: 1px solid fade(@black, 30%);
+    &:hover {
+      color: @orange;
+      border: none;
+    }
+  }
+  &--orange {
+    border-bottom: 1px solid fade(@orange, 30%);
+    &:hover {
+      border: none;
+    }
+  }
+}
+

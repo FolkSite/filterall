@@ -13,8 +13,6 @@ var imagemin = require("gulp-imagemin");
 var run = require("run-sequence");
 var del = require("del");
 
-
-
 gulp.task("style", function () {
   gulp.src("less/style.less")
     .pipe(plumber())
@@ -33,6 +31,7 @@ gulp.task("style", function () {
     .pipe(server.stream())
     .pipe(minify())
     .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("css"))
     .pipe(gulp.dest("build/css"));
 });
 
@@ -60,6 +59,7 @@ gulp.task("serve", ["style"], function () {
 
   gulp.watch("less/**/*.less", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("css/style.css").on("change", server.reload);
 });
 
 gulp.task("build", function (fn) {
