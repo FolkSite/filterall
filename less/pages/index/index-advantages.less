@@ -22,4 +22,38 @@
   display: none;
 }
 
+@media @tablet {
+  .index-advantages {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .index-advantages__item {
+    width: 40%;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+  .index-advantages__item-title {
+      font-size: 17px;
+    }
 
+  .index-advantages__item-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .index-advantages__factoid {
+    display: inline-block;
+    font-size: 15px;
+    width: 40%;
+  }
+  .index-advantages__factoid-title {
+    font-size: 60px;
+    font-family: @helvetica-bold;
+    color: @orange;
+  }
+}

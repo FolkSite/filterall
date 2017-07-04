@@ -11,17 +11,23 @@
   -webkit-appearance: none;
   &::-webkit-input-placeholder {
     color: @orange;
-    padding-left: 25px;
-    font-size: 13px;
+    padding-left: 15px;
+    font-size: 15px;
   }
   &::-moz-placeholder {
     color: @orange;
-    padding-left: 25px;
-    font-size: 13px;
+    padding-left: 15px;
+    font-size: 15px;
   }
   &:-ms-input-placeholder {
     color: @orange;
-    padding-left: 25px;
-    font-size: 13px;
+    padding-left: 15px;
+    font-size: 15px;
   }
+}
+
+@media @tablet {
+  .input-field {
+  padding: 0 10px 0 10px;
+}
 }
