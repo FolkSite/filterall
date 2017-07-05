@@ -1,7 +1,7 @@
 .index-intro {
-  height: auto;
   position: relative;
   z-index: 10;
+  height: auto;
 }
 
 .index-intro__text {
@@ -15,75 +15,77 @@
 }
 
 .index-intro__text-desc {
+  font-size: 16px;
   margin-top: 2px;
   margin-bottom: 30px;
-  font-size: 16px;
 }
 
 .index-intro__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   form {
+    position: relative;
     width: auto;
     height: auto;
-    position: relative;
     &::before {
-      content: "";
       position: absolute;
-      width: 11px;
-      height: 11px;
-      background-color: transparent;
-      border-radius: 100%;
-      border: 1px solid @orange;
       top: 30%;
       left: 8%;
+      width: 11px;
+      height: 11px;
+      content: '';
+      border: 1px solid @orange;
+      border-radius: 100%;
+      background-color: transparent;
     }
   }
 }
 
 .index-intro__actions-btn {
+  font-size: 14px;
   display: inline-block;
-  vertical-align: middle;
   height: auto;
   padding-top: 7px;
-  font-size: 14px;
+  vertical-align: middle;
 }
 
 .index-intro__actions-input {
   display: inline-block;
-  vertical-align: middle;
   height: 32px;
+  vertical-align: middle;
   &::-webkit-input-placeholder {
-    padding-left: 25px;
     font-size: 13px;
+    padding-left: 25px;
   }
   &::-moz-placeholder {
-    padding-left: 25px;
     font-size: 13px;
+    padding-left: 25px;
   }
   &:-ms-input-placeholder {
-    padding-left: 25px;
     font-size: 13px;
+    padding-left: 25px;
   }
 }
 
 @media @tablet {
   .index-intro {
     &:after {
-      content: "";
       position: absolute;
-      background: url(../img/header-pic-tab.png) no-repeat;
-      background-size: contain;
-      width: 350px;
-      height: 290px;
+      z-index: 1;
       top: 10%;
       right: -4.4%;
-      z-index: 1;
-
-    overflow-x: hidden;
+      overflow-x: hidden;
+      width: 350px;
+      height: 290px;
+      content: '';
+      background: url(../img/header-pic-tab.png) no-repeat;
+      background-size: contain;
     }
   }
-
   .index-intro__text {
     width: 390px;
   }
@@ -94,34 +96,86 @@
     font-size: 22px;
   }
   .index-intro__text-desc {
-    margin-top: 7px;
     font-size: 16px;
+    margin-top: 7px;
   }
   .index-intro__actions {
-    width: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    width: 360px;
   }
   .index-intro__actions-btn {
+    font-size: 16px;
     height: 40px;
     padding-top: 10px;
-    font-size: 16px;
   }
   .index-intro__actions-input {
-    height: 40px;
     width: 200px;
-    padding-right: 30px;
+    height: 40px;
+    padding-left: 30px;
     &::-webkit-input-placeholder {
+      font-size: 15px;
       padding-bottom: 0;
       padding-left: 30px;
-      font-size: 15px;
     }
     &::-moz-placeholder {
-      padding-left: 25px;
       font-size: 15px;
+      padding-left: 25px;
     }
     &:-ms-input-placeholder {
-      padding-left: 25px;
       font-size: 15px;
+      padding-left: 25px;
+    }
+  }
+}
+
+@media @desktop {
+  .index-intro {
+    margin-bottom: 30px;
+    &:after {
+      top: 0;
+      right: 0;
+      width: 600px;
+      height: 200px;
+      background: url(../img/header-pic.png) no-repeat;
+      background-size: contain;
+    }
+  }
+  .index-intro__text {
+    width: 450px;
+    padding-top: 20px;
+  }
+  .index-intro__text-title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .index-intro__text-link {
+    font-size: 26px;
+  }
+  .index-intro__text-desc {
+    font-size: 20px;
+  }
+  .index-intro__actions {
+    width: 430px;
+    form {
+      &::before {
+        left: 5%;
+      }
+    }
+  }
+  .index-intro__actions-input {
+    width: 270px;
+    padding-left: 35px;
+    &::-webkit-input-placeholder {
+      font-size: 16px;
+      padding-left: 5px;
+    }
+    &::-moz-placeholder {
+      font-size: 16px;
+    }
+    &:-ms-input-placeholder {
+      font-size: 16px;
     }
   }
 }

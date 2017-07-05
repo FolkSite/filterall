@@ -38,10 +38,6 @@
       margin-right: 0;
     }
   }
-  .index-advantages__item-title {
-      font-size: 17px;
-    }
-
   .index-advantages__item-text {
     font-size: 16px;
     line-height: 22px;
@@ -50,6 +46,25 @@
     display: inline-block;
     font-size: 15px;
     width: 40%;
+  }
+  .index-advantages__factoid-title {
+    font-size: 60px;
+    font-family: @helvetica-bold;
+    color: @orange;
+  }
+}
+
+@media @desktop {
+  .index-advantages__item {
+    width: 30%;
+    margin: 0;
+  }
+  .index-advantages__item-text {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .index-advantages__factoid {
+    display: none;
   }
   .index-advantages__factoid-title {
     font-size: 60px;

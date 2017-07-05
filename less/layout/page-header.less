@@ -3,17 +3,24 @@
   z-index: 10;
   height: auto;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   &:after {
     content: "";
     position: absolute;
     width: 100%;
-    height: 320px;
+    height: 400px;
     top: 0;
     right: 0;
     z-index: -1;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe59f), color-stop(53%, rgba(255, 233, 186, 0.74)), to(rgba(255, 233, 186, 0.01)));
     background-image: linear-gradient(to bottom, #ffe59f, rgba(255, 233, 186, 0.74) 53%, rgba(255, 233, 186, 0.01));
   }
 }
@@ -61,7 +68,6 @@
 
 .page-header__menu-list-item {
   padding: 20px 0;
-  color: @white;
   &--close {
     padding: 10px;
     background-color: @gray;
@@ -98,5 +104,76 @@
   .page-header__toggler {
     width: 30px;
     height: 19px;
+  }
+}
+
+@media @desktop {
+  .page-header {
+    padding-top: 30px;
+  }
+  .page-header__toggler {
+    display: none;
+  }
+  .page-header__logo img {
+    width: 55px;
+    height: 55px;
+  }
+  .page-header__logo-text-main {
+    font-size: 18px;
+  }
+  .page-header__logo-text-slogan {
+    display: block;
+    font-size: 14px;
+    padding-left: 7px;
+  }
+  .page-header__menu {
+    display: block;
+    position: static;
+    text-align: left;
+    background-color: transparent;
+  }
+  .page-header__menu-list {
+    width: 760px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .page-header__menu-list-item {
+    padding: 0;
+    &--close {
+      display: none;
+    }
+    &--contacts {
+      display: none;
+    }
+    &--cart {
+      margin-left: 30px;
+      a {
+        padding: 5px 10px;
+        border: 1px solid @orange;
+        border-radius: 5px;
+        &:hover {
+          background-color: @orange;
+          color: @white;
+        }
+      }
+    }
+  }
+  .page-header__menu-list-item a {
+    color: @black;
+    font-size: 16px;
+  }
+  .page-header__menu-list-item--cart a {
+    color: @black;
   }
 }

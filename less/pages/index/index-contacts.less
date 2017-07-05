@@ -72,12 +72,38 @@
     font-size: 16px;
   }
   .index-contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
   .index-contacts__list-item-title {
     margin-bottom: 5px;
   }
-  .index-contacts__map iframe {
+}
+
+@media @desktop {
+  .index-contacts {
+    position: relative;
+  }
+  .index-contacts__desc {
+    padding: 10 0 20px;
+    line-height: 20px;
+    font-size: 17px;
+    width: 500px;
+  }
+  .index-contacts__list {
+    display: inline-block;
+  }
+  .index-contacts__map {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    iframe {
+      width: 600px;
+      height: 215px;
+    }
   }
 }
