@@ -12,3 +12,28 @@ menuClose.addEventListener("click", function() {
     menu.style.display = "none";
     menuClose.style.display = "none";
 });
+
+var modalCart = document.getElementById('modal-filter');
+var modalBackground = document.getElementById('modal-bg');
+var closeModalCart = document.getElementById('close-modal-filter');
+var filters = document.querySelectorAll('.items__list-item');
+
+filters.forEach(function (filters) {
+  filters.addEventListener('click', function () {
+    modalCart.style.display = "block";
+    modalBackground.style.display = "block";
+  });
+});
+
+closeModalCart.addEventListener('click', function () {
+    modalCart.style.display = "none";
+    modalBackground.style.display = "none";
+  });
+
+modalBackground.addEventListener('click', function () {
+    modalCart.style.display="none";
+    modalBackground.style.display="none";
+  });
+
+
+

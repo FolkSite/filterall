@@ -1,0 +1,149 @@
+.modal-filter {
+  position: absolute;
+  display: none;
+  width: 92%;
+  right: 4%;
+  left: 4%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0.5px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px 30px;
+}
+
+.modal-filter__bg {
+  position: absolute;
+  display: none;
+  background: fade(@gray, 90%);
+  left: -4%;
+  right: -4%;
+  height: 100%;
+}
+
+.modal-filter__close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 2.8%;
+  right: 3%;
+  cursor: pointer;
+  &:hover span {
+    background: @orange;
+  }
+  &-part-left {
+    position: absolute;
+      background: #000;
+      width: 20px;
+      height: 1px;
+      transform: rotate(45deg);
+  }
+  &-part-right {
+    position: absolute;
+      background: #000;
+      width: 20px;
+      height: 1px;
+      transform: rotate(-45deg);
+  }
+}
+
+.modal-filter__text {
+  margin-bottom: 20px;
+}
+
+.modal-filter__text-title {
+  font-weight: 400;
+  font-family: @helvetica;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.modal-filter__text-article {
+  font-size: 14px;
+  font-weight: 300;
+  color: fade(@gray, 30%);
+}
+
+.modal-filter__pic {
+  width: 60%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.modal-filter__info {
+  margin-bottom: 30px;
+}
+
+.modal-filter__info-item {
+  margin-bottom: 15px;
+}
+
+.modal-filter__info-item-title {
+  font-size: 15px;
+}
+
+.modal-filter__info-item-desc {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.modal-filter__price {
+  display: block;
+  margin-bottom: 15px;
+  font-family: @helvetica-bold;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.modal-filter__btn {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.modal-filter__btn-desc {
+  display: block;
+  font-size: 12px;
+  padding-left: 12px;
+  a {
+    color: @orange;
+  }
+}
+
+@media @tablet {
+  .modal-filter {
+    max-width: 700px;
+  }
+  .modal-filter__close {
+    top: 5%;
+    right: 3%;
+  }
+  .modal-filter__wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &:last-child {
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .modal-filter__pic {
+    width: 200px;
+    object-fit: contain;
+  }
+  .modal-filter__info {
+    max-width: 60%;
+  }
+  .modal-filter__btn {
+    margin-bottom: 5px;
+  }
+  .modal-filter__btn-desc {
+    padding-left: 28px;
+  }
+}
+
+@media @desktop {
+  .modal-filter {
+    left: 50%;
+    margin-left: -350px;
+  }
+}
