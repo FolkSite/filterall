@@ -615,6 +615,7 @@ a {
     flex-direction: column;
   }
   .items__list-column-wrap--sale {
+    width: 50%;
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-pack: justify;
