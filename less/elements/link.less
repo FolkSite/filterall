@@ -13,9 +13,16 @@
       border-bottom: 1px solid fade(@orange, 0%);
     }
   }
+  &--red {
+    color: @red;
+    border-bottom: 1px solid fade(@red, 30%);
+      &:hover {
+        border-bottom: 1px solid fade(@red, 0%);
+      }
+    }
   &--active {
     color: @orange !important;
-    border: none;
+    border-bottom: 1px solid fade(@orange, 0%);
   }
 }
 
