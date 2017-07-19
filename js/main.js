@@ -13,6 +13,14 @@ menuClose.addEventListener("click", function() {
     menuClose.style.display = "none";
 });
 
+
+$(window).load(function(){
+    $('.items__list').masonry({
+      columnWidth: '.items__list-item',
+      itemSelector: '.items__list-item'
+    });
+});
+
 var modalCart = document.getElementById('modal-filter');
 var modalBackground = document.getElementById('modal-bg');
 var closeModalCart = document.getElementById('close-modal-filter');
@@ -34,6 +42,8 @@ modalBackground.addEventListener('click', function () {
     modalCart.style.display="none";
     modalBackground.style.display="none";
   });
+
+
 
 
 
