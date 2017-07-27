@@ -2,32 +2,61 @@
   padding: 8px 0 8px 8px;
   background-color: transparent;
   color: @black;
+  height: 40px;
   border-radius: 5px;
   font-size: 14px;
   font-family: @helvetica;
   cursor: pointer;
   outline: none;
+  resize: none;
   border: 1px solid @orange;
   -webkit-appearance: none;
   &::-webkit-input-placeholder {
     color: @orange;
-    padding-left: 15px;
     font-size: 15px;
   }
   &::-moz-placeholder {
     color: @orange;
-    padding-left: 15px;
     font-size: 15px;
   }
   &:-ms-input-placeholder {
     color: @orange;
-    padding-left: 15px;
     font-size: 15px;
+  }
+}
+
+.input-field--gray {
+  border-color: fade(@gray, 25%);
+  -webkit-appearance: none;
+  &::-webkit-input-placeholder {
+    color: #4b4a4a;
+  }
+  &::-moz-placeholder {
+    color: #4b4a4a;
+  }
+  &:-ms-input-placeholder {
+    color: #4b4a4a;
   }
 }
 
 @media @tablet {
   .input-field {
-  padding: 0 10px 0 10px;
+    padding: 0 10px 0 10px;
+  }
 }
+
+@media @desktop {
+  .input-field {
+    height: 45px;
+    font-size: 16px;
+    &::-webkit-input-placeholder {
+      font-size: 16px;
+    }
+    &::-moz-placeholder {
+      font-size: 16px;
+    }
+    &:-ms-input-placeholder {
+      font-size: 16px;
+    }
+  }
 }

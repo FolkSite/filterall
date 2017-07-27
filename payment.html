@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Фильтры в Алма-Ате | Оплата заказа</title>
+  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="container">
+    <header class="page-header page-header--cart">
+      <div class="page-header__logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Фильтрол">
+        </a>
+        <div class="page-header__logo-text">
+          <a href="index.html" class="page-header__logo-text-main">Фильтрол</a>
+          <a href="index.html" class="page-header__logo-text-slogan">Фильтры на все</a>
+        </div>
+      </div>
+      <nav class="page-header__menu">
+        <ul class="page-header__menu-list">
+          <li class="page-header__menu-list-item page-header__menu-list-item--close"><a href="#">Закрыть меню</a></li>
+          <li class="page-header__menu-list-item"><a href="oil-filters.html" class="link link--black">Маслянные</a></li>
+          <li class="page-header__menu-list-item"><a href="fuel-filters.html" class="link link--black">Топливные</a></li>
+          <li class="page-header__menu-list-item"><a href="air-filters.html" class="link link--black">Воздушные</a></li>
+          <li class="page-header__menu-list-item"><a href="index.html#index-shipping" class="link link--black">Доставка и оплата</a></li>
+          <li class="page-header__menu-list-item"><a href="index.html#index-contacts" class="link link--black">Контакты</a></li>
+          <li class="page-header__menu-list-item page-header__menu-list-item--cart"><a href="cart.html">4 товара</a></li>
+          <li class="page-header__menu-list-item page-header__menu-list-item--contacts"><a href="tel:+77001286432">+7 700 128 64 32</a>
+            <br>Работаем с 8:00 до 20:00</li>
+        </ul>
+      </nav>
+      <a href="#" class="page-header__toggler"></a>
+    </header>
+    <section class="payment">
+      <h3 class="payment__title title title--h3">Оформление и оплата заказа №02-2347</h3>
+      <form class="payment__form">
+        <h4 class="payment__form-title title title--h4">Кому доставить?</h4>
+        <div class="payment__form-box">
+          <input type="text" class="payment__form-input input-field input-field--gray" id="name" placeholder="Ваше имя">
+          <input type="text" class="payment__form-input input-field input-field--gray" id="last-name" placeholder="Фамилия">
+          <input type="text" class="payment__form-input input-field input-field--gray" id="phone" placeholder="Номер мобильного телефона">
+          <input type="e-mail" class="payment__form-input input-field input-field--gray" id="e-mail" placeholder="Ваш e-mail">
+        </div>
+        <h4 class="payment__form-title title title--h4">Куда доставить?</h4>
+        <div class="payment__form-box">
+          <select class="payment__form-select select">
+            <option value="kz-shipping">По Казахстану</option>
+            <option value="aa-shipping">По Алмате</option>
+          </select>
+          <p class="payment__form-select-info">Доставка транспортной компанией<br>за 2000 ₸ в течение 10 дней</p>
+          <textarea class="payment__form-textarea input-field input-field--gray" id="phone" placeholder="Адрес доставки (город, улица, дом, квартира или офис)"></textarea>
+        </div>
+        <div class="payment__form-submit">
+          <span class="payment__form-submit-text">Итого к оплате — 31 248 ₸</span>
+          <input type="submit" class="payment__form-submit-btn btn" value="Оплатить">
+        </div>
+      </form>
+      <div class="payment__form-info">
+        <h3 class="payment__form-info-title title title--h3">Зачем нам ваш телефон и e-mail?</h3>
+        <p class="payment__form-info-text">После оплаты, с вами оперативно свяжется наш менеджер, для подтверждения оплаты. А на e-mail мы пришлем номер отслеживания вашего отправления. Гарантируем, контакты не будут переданы третьим лицам.</p>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <span class="page-footer__dev-info">Дизайн и реализация — <a href="http://dimavolkov.ru" class="link--black">Дима Волков</a>
+      </span>
+      <div class="page-footer__docs">
+        <div class="page-footer__docs-link">
+          <a href="#" class="link link--black">Условия доставки</a>
+        </div>
+        <div class="page-footer__docs-link">
+          <a href="#" class="link link--black">Соглашение о конфиденциальности</a>
+        </div>
+      </div>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-info">ООО «Фильтрол» © 2017<br>Алматы, ул.Гагарина, 6А</span>
+        <a href="tel:+77001286432" class="link">+7 700 128 64 32</a>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

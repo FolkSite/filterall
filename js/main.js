@@ -13,7 +13,6 @@ menuClose.addEventListener("click", function() {
     menuClose.style.display = "none";
 });
 
-
 $(window).load(function(){
     $('.items__list').masonry({
       columnWidth: '.items__list-item',
